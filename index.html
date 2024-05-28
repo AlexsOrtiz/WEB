@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pop It Showcase</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Pop It Toys</div>
+        <nav class="header__nav">
+            <button class="header__menu-button" onclick="toggleMenu()">Menu</button>
+            <ul class="header__menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <h1>Welcome to the World of Pop It Toys!</h1>
+        <p>Explore the ultimate collection of stress relieving toys.</p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery__carousel">
+            <button class="carousel__button carousel__button--prev" onclick="moveSlide(-1)">❮</button>
+            <div class="carousel__wrapper">
+                <div class="carousel__items">
+                    <img src="img/amongus.png" alt="Among Us Pop It" class="carousel__item">
+                    <img src="img/photo.jpg" alt="Multi-color Pop It" class="carousel__item">
+                    <img src="img/imagen1.jpg" alt="Round" class="carousel__item">
+                    <img src="img/imagen2.jpg" alt="Unicorn" class="carousel__item">
+                    <img src="img/imagen3.jpg" alt="Play" class="carousel__item">
+
+                   
+                </div>
+            </div>
+            <button class="carousel__button carousel__button--next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>© 2024 Pop It Toys. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
